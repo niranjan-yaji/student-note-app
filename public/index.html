@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Note App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 Student Note App</h1>
+        <p>Store and manage your study notes</p>
+    </header>
+
+
+    <main>
+
+        <!-- Add Note -->
+
+        <section class="note-form">
+
+            <h2>Add New Note</h2>
+
+            <form id="noteForm">
+
+                <label for="title">
+                    Note Title
+                </label>
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter note title"
+                    required
+                >
+
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Enter subject"
+                    required
+                >
+
+
+                <label for="tags">
+                    Tags
+                </label>
+
+                <input
+                    type="text"
+                    id="tags"
+                    placeholder="Example: DBMS, SQL"
+                >
+
+
+                <label for="content">
+                    Note Content
+                </label>
+
+                <textarea
+                    id="content"
+                    rows="8"
+                    placeholder="Write your note here..."
+                    required
+                ></textarea>
+
+
+                <button type="submit">
+                    Save Note
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Search -->
+
+        <section class="notes-section">
+
+            <div class="notes-header">
+
+                <h2>My Notes</h2>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="🔍 Search notes..."
+                >
+
+            </div>
+
+
+            <!-- Notes will appear here -->
+
+            <div id="notesContainer">
+
+                <p>
+                    No notes available.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
